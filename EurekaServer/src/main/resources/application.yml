@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: Eureka_Server                                                        # название сервера
+
+server:
+  port: 8761                                                                   # порт, на котором запускается
+
+eureka:
+  client:
+    fetch-registry: false                                                      # отключение автоматической загрузки реестра сервисов
+    register-with-eureka: false                                                # отключение автоматической регистрации текущего сервиса
+
+    eureka-server-connect-timeout-seconds: 60                                  # время ожидания (одна минута) до истечения тайм-аута соединения с Eureka Server
+    eureka-service-url-poll-interval-seconds: 15                               # каждые 15 секунд запрос изменения информации с сервера
+    use-dns-for-fetching-service-urls: false                                   # запретить dns
+    service-url:
+      defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/  # указание явного маршрута к Eureka Server
+    healthcheck:
+      enabled: true                                                            # для клиента включим healthcheck
+    prefer-same-zone-eureka: true                                              # использовать сервер eureka в той же зоне
+
+  server:
+    renewal-percent-threshold: 0.85                                            # если возникнут проблемы в сети или наш сервер выйдет из строя, мы хотим запретить клиент
+    expected-client-renewal-interval-seconds: 20                               # установить время, по которому сервер будет ожидать эхо запрос от клиента о том, что он жив (20 секунд)
+
+  instance:
+    hostname: localhost                                                        # указание hostname для экземпляра
+    metadata-map:
+      zone: zone_A                                                             # использовать сервер eureka в той же зоне (указание конкретно зоны)
+    lease-expiration-duration-in-seconds: 70                                   # если Eureka Server не видел обновления в течение 70 секунд, он удаляет экземпляр из своего реестра

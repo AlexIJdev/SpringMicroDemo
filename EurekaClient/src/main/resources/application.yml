@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Eureka_Client                                                   # название клиента
+
+server:
+  port: 0                                                                 # порт, на котором запускается клиент
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/                          # указание явного маршрута к серверу Eureka
+    eureka-service-url-poll-interval-seconds: 35                          # указание интервала, через который клиент шлет эхо запрос на сервер
+
+  instance:
+    prefer-ip-address: true                                               # использование IP адреса
