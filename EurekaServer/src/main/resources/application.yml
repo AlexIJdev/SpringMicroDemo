@@ -14,7 +14,7 @@ eureka:
     eureka-service-url-poll-interval-seconds: 15                               # каждые 15 секунд запрос изменения информации с сервера
     use-dns-for-fetching-service-urls: false                                   # запретить dns
     service-url:
-      defaultZone: https://${eureka.instance.hostname}:${server.port}/eureka/  # указание явного маршрута к Eureka Server
+      defaultZone: https://localhost:8761/eureka/                              # указание явного маршрута к Eureka Server
     healthcheck:
       enabled: true                                                            # для клиента включим healthcheck
     prefer-same-zone-eureka: true                                              # использовать сервер eureka в той же зоне

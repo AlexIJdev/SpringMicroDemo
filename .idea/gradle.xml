@@ -13,6 +13,22 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ConfigClient" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ConfigClient" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ConfigServer" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ConfigServer" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/EurekaClient" />
         <option name="modules">
           <set>

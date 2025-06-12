@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: ConfigServer
+  profiles:
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        native:
+          search-locations: file:\\\C:\Users\Александр\Desktop\Java\Projects\SpringMicroDemo\ms-config-properties\{application}\{profile}
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
