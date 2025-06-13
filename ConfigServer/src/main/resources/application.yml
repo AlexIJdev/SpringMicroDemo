@@ -7,10 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/AlexIJdev/ms-config-properties.git
-          search-paths: "ms-config-properties/{application}/{profile}"
+          uri: https://github.com/AlexIJdev/ms-config-properties
+          search-paths: /{application}/{profile}
           default-label: main
           clone-on-start: true
+          username: AlexIJdev
+          password: SHVEPSSHVEPS98765432
 
 server:
   port: 8888
@@ -19,3 +21,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    org.springframework.cloud: TRACE
