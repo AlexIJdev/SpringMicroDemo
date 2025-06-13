@@ -44,6 +44,22 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/FeighClient" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/FeighClient" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/FeignClient" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/FeignClient" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
