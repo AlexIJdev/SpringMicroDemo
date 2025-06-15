@@ -13,6 +13,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/BookService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/BookService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/ConfigClient" />
         <option name="modules">
           <set>
@@ -41,14 +49,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/EurekaServer" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/FeighClient" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/FeighClient" />
           </set>
         </option>
       </GradleProjectSettings>
